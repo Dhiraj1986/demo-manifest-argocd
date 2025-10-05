@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: dhiraj-service
+
+spec:
+  ports:
+  - port: 9000
+    targetPort: 80
+  selector:
+    ram: muzaffarpur
+  type: LoadBalancer
+    
